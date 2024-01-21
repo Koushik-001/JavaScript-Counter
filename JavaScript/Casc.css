@@ -1,0 +1,29 @@
+*{
+    background-color: rgb(208, 203, 203);
+    align-items: center;
+}
+.but{
+    height: 30px;
+width: 60px;
+border-radius: 5px;
+border: 0px;
+position: absolute;
+top: 120px;
+left: 10px;
+}
+.lab{
+    height: 30px;
+width: 200px;
+border-radius: 5px;
+border: 1px solid;
+position: absolute;
+top: 70px;
+left: 10px;
+}
+.uname{
+align-items: center;
+position: relative;    
+}
+.but:hover{
+    box-shadow: 2px 2px 5px rgb(90, 88, 88);
+}
