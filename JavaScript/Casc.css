@@ -1,8 +1,8 @@
-*{
+/* *{
     background-color: rgb(208, 203, 203);
     align-items: center;
 }
-.but{
+#submit{
     height: 30px;
 width: 60px;
 border-radius: 5px;
@@ -11,7 +11,7 @@ position: absolute;
 top: 120px;
 left: 10px;
 }
-.lab{
+#form{
     height: 30px;
 width: 200px;
 border-radius: 5px;
@@ -20,15 +20,31 @@ position: absolute;
 top: 70px;
 left: 10px;
 }
-.uname{
+#label{
 align-items: center;
 position: relative;    
 }
-.but:hover{
+#submit:hover{
     box-shadow: 2px 2px 5px rgb(90, 88, 88);
+} */
+
+
+
+*{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-
+.buttons{
+    background-color: rgb(91, 91, 238);
+    border: 0px;
+    border-radius: 5px;
+    height: 2em;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.buttons:hover{
+background-color: rgb(39, 39, 199);    
+}
 
 
 
