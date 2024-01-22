@@ -1,35 +1,3 @@
-/* *{
-    background-color: rgb(208, 203, 203);
-    align-items: center;
-}
-#submit{
-    height: 30px;
-width: 60px;
-border-radius: 5px;
-border: 0px;
-position: absolute;
-top: 120px;
-left: 10px;
-}
-#form{
-    height: 30px;
-width: 200px;
-border-radius: 5px;
-border: 1px solid;
-position: absolute;
-top: 70px;
-left: 10px;
-}
-#label{
-align-items: center;
-position: relative;    
-}
-#submit:hover{
-    box-shadow: 2px 2px 5px rgb(90, 88, 88);
-} */
-
-
-
 *{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
