@@ -41,6 +41,7 @@ position: relative;
     height: 2em;
     cursor: pointer;
     transition: background-color 1s;
+    font-weight: 200;
 }
 .buttons:hover{
 background-color: rgb(39, 39, 199);    
