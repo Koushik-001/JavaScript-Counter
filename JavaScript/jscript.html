@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Casc.css"/>
+    <link rel="stylesheet" href="Casc.css">
     <title>Document</title>
 </head>
 <body>
-      
-    <h1 id="header">0</h1>
-    <button class="buttons" id="decbtn">Decrease</button>
-    <button class="buttons" id="resbtn">Reset</button>
-    <button class="buttons" id="incbtn">Increase</button>
-    
-    <script src="JScript.js"></script> 
+    <form>
+        <label for="inpfield">Temperature Conversion</label><br><br>
+        <input type="number" value="0" id="inpfield"><br><br>
+
+        <input type="radio" id="ctof" name="unit">
+        <label for="ctof">Celsius ➡️ Farenheit</label><br>
+        
+        <input type="radio" id="ftoc" name="unit">
+        <label for="ftoc">Farenheit ➡️ Celsius</label><br><br>
+
+        <button type="button"  onclick="convert()">Submit</button>
+        <p id="result"></p>
+
+        <script src="Jscript.js"></script>
+    </form>
 
 </body>
 </html>
-
