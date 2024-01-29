@@ -1,22 +1,15 @@
-const inpfield = document.getElementById("inpfield");
-const ctof = document.getElementById("ctof");
-const ftoc = document.getElementById("ftoc");
-const result = document.getElementById("result");
-let temp;
 
-function convert(){
-
-if(ctof.checked){
-    temp = Number(inpfield.value);
-    temp = temp * 9/5 +32;
-    result.textContent=temp.toFixed(1)+"°F";
+function droll(){
+    const inpfield = document.getElementById("inpfield").value;
+    const  diceresult = document.getElementById("diceresult");
+    const  diceimage = document.getElementById("diceimage");
+    const values = [];
+    const images = [];
+for(let i=0;i<inpfield;i++){
+ const value = Math.floor(Math.random()*6)+1;  
+ images.push(`<img src='DieFace/${value}.png'>`)     
+values.push(value);
 }
-else if(ftoc.checked){
-    temp = Number(inpfield.value);
-    temp = (temp-32)*(5/9);
-    result.textContent=temp.toFixed(1)+"°C";
-}
-else{
-    result.textContent='Select a Unit';
-}
+diceresult.textContent = `dice:${values.join(', ')}`;
+diceimage.innerHTML = images.join('');
 }

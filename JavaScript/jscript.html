@@ -7,21 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <label for="inpfield">Temperature Conversion</label><br><br>
-        <input type="number" value="0" id="inpfield"><br><br>
-
-        <input type="radio" id="ctof" name="unit">
-        <label for="ctof">Celsius ➡️ Farenheit</label><br>
-        
-        <input type="radio" id="ftoc" name="unit">
-        <label for="ftoc">Farenheit ➡️ Celsius</label><br><br>
-
-        <button type="button"  onclick="convert()">Submit</button>
-        <p id="result"></p>
-
-        <script src="Jscript.js"></script>
-    </form>
-
+    
+    <div id="container">
+    <label for="inpfield"># of Dice:</label>
+    <input type="number" id="inpfield" min="1" value="1">
+    <button  onclick="droll()">Roll Dice</button>
+    <div id="diceresult"></div>
+    <div id="diceimage"></div>
+</div>
+<script src="Jscript.js"></script>
 </body>
 </html>
