@@ -1,15 +1,10 @@
-
-function droll(){
-    const inpfield = document.getElementById("inpfield").value;
-    const  diceresult = document.getElementById("diceresult");
-    const  diceimage = document.getElementById("diceimage");
-    const values = [];
-    const images = [];
-for(let i=0;i<inpfield;i++){
- const value = Math.floor(Math.random()*6)+1;  
- images.push(`<img src='DieFace/${value}.png'>`)     
-values.push(value);
+function updateclock(){
+const date = new Date();
+const hrs = date.getHours().toString().padStart(2,0);
+const min = date.getMinutes().toString().padStart(2,0);
+const sec = date.getSeconds().toString().padStart(2,0);
+const tstring=`${hrs}:${min}:${sec}`;
+document.getElementById("clock").textContent=tstring;
 }
-diceresult.textContent = `dice:${values.join(', ')}`;
-diceimage.innerHTML = images.join('');
-}
+updateclock();
+setInterval(updateclock,1000);

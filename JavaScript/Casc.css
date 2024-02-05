@@ -1,27 +1,18 @@
-#container{
-font-size: 1rem;
-text-align: center;
+body{
+background-image: url(Bckgrnd.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+height: 90vh;
 }
-form{
+#clock{
     text-align: center;
-    border: 1px solid;
-    max-width: 350px;
-    margin: auto;
-    border-radius:15px ;
+    position: relative;
+    top: 300px;
+    color: rgba(5, 215, 180, 0.899);
+    font-size: 45px;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    box-shadow: 5px 5px 15px black;
-}
-
-button{
-    border-radius: 5px;
-    border: 1px solid;
-    font-family: 'Courier New', Courier, monospace;
-    cursor: pointer;
-}
-button:hover{
-    box-shadow: 2px 2px 5px black;
-}
-img{
-    max-width: 40px;
-    border-radius: 5px;
+    
 }
